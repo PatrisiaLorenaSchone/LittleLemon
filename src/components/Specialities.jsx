@@ -8,9 +8,11 @@ function Specialities() {
     <div className='specialitySection'>
       <SecondaryTitle title={"This week's specials"}/>
       <div>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem autem totam quae placeat unde similique molestiae eveniet odio ea illo reprehenderit veritatis exercitationem velit nostrum vel, nobis, aperiam iusto iure.
-      Saepe amet minima, nihil labore tempore consequuntur corporis cumque sapiente perspiciatis autem veniam eos magni nulla molestiae sed quo rerum illum expedita quod quis. Architecto eos laboriosam iure libero eveniet!</p>
-      <button>Go to the menu</button>
+      <p>Close your eyes and try to imagine a perfect day. You hear the waves of the mediterranean sea, under a little lemon tree. 
+        A brezze in the hot air caries the delicious smell of something salty or maybe of something sweet . . . <br/> 
+        From the freshness of The Greek Salad to the strong aroma of The Carbonara, everything is prepared with special care and much love 
+      </p>
+      <button>See full menu</button>
       </div>
       <SpecialityCard/>
     </div>
