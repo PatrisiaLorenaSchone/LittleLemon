@@ -4,7 +4,7 @@ import logoSquare from "../assets/logoSquare.png"
 function Footer() {
   return (
     <div>
-      <footer>
+      <footer className='wrapper'>
         <img height={200} src={logoSquare} alt="" />
         <ul>
             <h3>Opening hours</h3>
