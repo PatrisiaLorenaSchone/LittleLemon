@@ -9,7 +9,7 @@ import stars from "../assets/stars.png"
 function Testimonials() {
   return (
     <div className='testimonialSection'>
-      <div className="testimonialCardContainer">
+      <div className="testimonialCardContainer wrapper">
         <div className="testimonialCard">
           <div className='testimonialHeader'>
             <img src={p1} alt="" />

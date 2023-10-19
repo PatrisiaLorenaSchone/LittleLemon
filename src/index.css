@@ -5,26 +5,44 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color:rgb(4, 23, 0);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+.loading{
+  position: absolute;
+  top:30%;
+  left: 40%;
+  right: 40%;
+  color:rgba(255, 217, 0, 0.555);
+  text-align: center;
+  filter: drop-shadow(2px 2px 80px gold);
+}
+.loading img{
+  animation: wooble 1.5s ease 2s infinite normal forwards;
+}
 h2, h1{
   margin: 0;
   text-indent: 0%;
   padding: 0;
 }
-a {
+h2{
+  border-bottom: 2px solid rgb(0, 170, 0);
+}
+p{
+  font-size: large;
+  font-weight: 400;
+}
+nav a {
   font-weight: 500;
   color: #ffffff;
   text-decoration: inherit;
   border-bottom: 2px solid rgba(255, 255, 255, 0.089);
   transition: 0.5s;
 }
-a:hover {
+nav a:hover {
   color: rgb(206, 206, 181);
   border-bottom: 2px solid rgb(206, 206, 181);
 }
@@ -47,15 +65,37 @@ h1 {
   line-height: 1.1;
 }
 nav{
+  position: relative;
   padding: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.mobileNav{
+  background-color: #1d1d1d;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: absolute;
+  top: 158px;
+  right: -2px;
+  left: -2px;
+}
+.mobileNav a:hover{
+  transform: scale(1.1);
+}
+.wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
 .navBar{
   display: flex;
   gap: 50px;
   overflow: hidden;
+}
+.hamburgerMenu{
+  display:none;
 }
 .homePage{
   width: 100%;
@@ -74,7 +114,7 @@ header{
   padding: 100px 10%;
   width: 70%;
   margin: auto;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: #ffffff4d;
   margin-bottom: 150px;
   color: #232323;
 }
@@ -103,8 +143,6 @@ header{
 }
 .specialityCardsContainer{
   margin-top: 50px;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
   overflow: hidden;
 }
@@ -113,7 +151,7 @@ header{
   margin: auto;
   background-color: rgba(255, 255, 255, 0.9);
   width: 300px;
-  height: 400px;
+  height: 505px;
   transition: 0.5s;
   color: #232323;
 }
@@ -129,15 +167,17 @@ header{
 .animationContainer{
   padding: 80px;
   transition: 0.8s;
+  background-position: center;
 }
 .animationContainer:hover{
   background-image: url(assets/cardHover2.png);
   background-size:contain;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .specialityCard:hover{
   transform: scale(1.05);
-  filter: drop-shadow(3px 3px 35px rgba(255, 255, 255, 0.7));
+  filter: drop-shadow(2px 2px 20px rgba(255, 255, 255, 0.7));
 }
 .testimonialSection{
   background-image: url(./assets/lemonTree.jpg);
@@ -147,16 +187,14 @@ header{
   width: 100%;
 }
 .testimonialCardContainer{
-  display: flex;
   padding: 50px;
   justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap;
   gap: 100px
 }
 .testimonialCard{
-  background-color: rgba(15, 15, 15, 0.7);
-  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #303030;
   border-radius: 5px;
   height: 180px;
   width: 30%;
@@ -172,8 +210,6 @@ header{
   background-color:rgb(4, 23, 0);
   padding-top: 150px;
   margin-bottom: 150px;
-  display: flex;
-  flex-wrap: wrap;
   gap:50px;
   justify-content: space-evenly;
 }
@@ -198,9 +234,10 @@ header{
   padding-left: 8%;
   margin-top: 30px;
 }
+.iconContainer img{
+  filter: brightness(20%);
+}
 footer{
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(206, 206, 181);
@@ -216,4 +253,84 @@ li{
   justify-content: space-between;
   gap:20px;
 }
+iframe{
+  border: none;
+}
+.tableBookingSection{
+  background-image: url(./assets/restaurant.jpg);
+  background-size: cover;
+  background-blend-mode: soft-light;
+  width: 100%;
+}
+form, .thankYou{
+  background-color: rgba(0, 0, 0, 0.5);
+  width: fit-content;
+  min-height: 500px;
+}
+form, .formEdit, .thankYou{
+  display: flex;
+  padding: 10%;
+  flex-direction: column;
+  gap: 35px;
+  align-items: flex-start;
+}
+.formEdit li{
+  align-items: center;
+}
+.wrapper label{
+  width: 155px;
+  text-align: left;
+}
+form input, form select{
+  height: 35px;
+}
+form input, form select, textarea{
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  border-radius: 3px;
+  padding: 3px 12px;
+  border: none;
+}
+form label{
+  font-weight: 600;
+}
+.radioInput{
+display: flex;
+align-items: center;
+gap: 5px;
+}
+.deleteBtn{
+  color:red;
+  text-decoration: underline;
+  font-size: 1.5em;
+  cursor: pointer;
+}
 
+@media screen and (max-width: 780px){
+  .navBar{
+    display: none;
+  }
+  nav img{
+    height: 55px;
+  }
+  .hamburgerMenu{
+    display: block;
+  }
+  .specialitySection{
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
+  form, .formEdit, .thankYou{
+    padding: 6%;
+    padding-top: 10%;
+  }
+}
+@keyframes wooble {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

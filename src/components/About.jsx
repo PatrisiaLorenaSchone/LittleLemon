@@ -7,9 +7,9 @@ import hat2 from "../assets/hat2.png"
 
 function About() {
   return (
-    <div id="about" className='aboutSection'>
+    <div id="about" className='aboutSection wrapper'>
       <div className='aboutText'>
-      <SecondaryTitle title={"We do what we love and we love what we do"}/>
+      <SecondaryTitle title={"The story of Little Lemon"}/>
         <p>  Based in Chicago, Illinois, Little Lemon is a family-owned Mediterranean restaurant, 
           focused on traditional recipes served with a modern twist. 
           The chefs draw inspiration from Italian, Greek, and Turkish culture and have a menu of 12 - 15 items that they rotate seasonally. 
