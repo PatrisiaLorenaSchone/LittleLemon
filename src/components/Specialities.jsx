@@ -1,6 +1,7 @@
 import React from 'react'
 import SecondaryTitle from './secondaryTitle'
 import SpecialityCard from './SpecialityCard'
+import { Link } from 'react-router-dom'
 
 function Specialities() {
 
@@ -12,7 +13,7 @@ function Specialities() {
         A brezze in the hot air caries the delicious smell of something salty or maybe of something sweet . . .
         From the freshness of The Greek Salad to the strong aroma of The Carbonara, everything is prepared with special care and much love. Every week we give our best to surprise you with new delights 
       </p>
-      <button>See full menu</button>
+      <Link to="/menu"><button>See full menu</button></Link>
       </div>
       <SpecialityCard/>
     </div>

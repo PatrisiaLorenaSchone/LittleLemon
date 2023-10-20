@@ -1,8 +1,10 @@
 import React from 'react'
 import {useState} from "react"
-import TableBooking from './TableBooking';
+import { Link } from 'react-router-dom';
+import emptyTable from "../assets/emptyTable.png"
+import restaurant3 from "../assets/restaurant3.jpg"
 
-function ManageBooking({formValue, setFormValue}) {
+function ManageBooking({formValue, setFormValue, submitted}) {
 
 function handleChange(e){
   let{name, value} = e.target;
@@ -20,10 +22,11 @@ function editData(){
 }
 
   return (
-    <div>
+      submitted ? 
+      <div className='manageBookingSection'>
       <h1>Hello, {formValue.firstName}!</h1>
       <h2>This is your current booking:</h2>
-      <div className="wrapper" style={{justifyContent:"space-between"}}>
+      <div className=" bookings wrapper" style={{justifyContent:"space-between"}}>
       <ul className='formEdit'>
         <li>
           <b>First Name: </b>
@@ -85,10 +88,20 @@ function editData(){
           : <p>{formValue.message}</p>}
         </li>
       </ul>
+      <img height={700} src={restaurant3} alt="" />
       <button style={{height:"52px", margin: "10px"}} onClick={editData} > {edit ? `Save Changes` : `Edit Booking`}</button>
       </div>
       <p className='deleteBtn'>Delete Reservation</p>
     </div>
+    : <div className='manageBookingSection'>
+        <h2>It looks like you do not have any reservation</h2> 
+        <img height={300} src={emptyTable} alt="" />
+        <p> At Little Lemon we are always happy to see you and offer you the best culinary experience in town</p>
+        <p>Make sure to visit us soon</p>
+        <Link to="/booking">
+        <button>Book a Table</button>
+        </Link>
+      </div>
   )
 }
 
