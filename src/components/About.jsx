@@ -1,6 +1,6 @@
 import React from 'react'
 import SecondaryTitle from './secondaryTitle'
-import chefs from "../assets/chefs1.png"
+import chefs from "../assets/chefs2.png"
 import hat1 from "../assets/hat1.png"
 import fork from "../assets/fork.png"
 import hat2 from "../assets/hat2.png"
@@ -26,7 +26,7 @@ function About() {
           <img src={hat2} alt="" />
         </div>
       </div>
-      <img className='aboutImg' src={chefs} alt="the chefs" height={550}/>
+      <img className='aboutImg' src={chefs} alt="the chefs"/>
     </div>
   )
 }

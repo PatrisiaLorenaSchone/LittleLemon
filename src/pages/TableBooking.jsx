@@ -1,7 +1,7 @@
-import { useState } from "react"
+import SecondaryTitle from "../components/secondaryTitle"
 import ThankYou from "../components/ThankYou"
 
-function TableBooking({formValue, setFormValue}) {
+function TableBooking({formValue, setFormValue, submitted, setSubmitted}) {
 
   function handleChange(e){
     let {value, type, name, checked} = e.target
@@ -12,16 +12,16 @@ function TableBooking({formValue, setFormValue}) {
       }
     })
   }
-  let [submitted, setSubmitted] = useState(false)
+
   function handleSubmit(e){
     e.preventDefault();
-    setSubmitted(!submitted)
+    setSubmitted(true);
   }
   return (
     <div className="tableBookingSection">
       {submitted ? <ThankYou/> : 
     <form action="" onSubmit={handleSubmit}>
-      <h2>Booking informations:</h2>
+      <SecondaryTitle title={"Booking informations:"}/>
       <div className="wrapper">
         <label htmlFor="firstName">*First Name: </label>
         <input 
@@ -29,7 +29,8 @@ function TableBooking({formValue, setFormValue}) {
         value={formValue.firstName} 
         name="firstName"
         onChange={handleChange}
-        type="text" />
+        type="text" 
+        required/>
       </div>
       <div className="wrapper">
         <label htmlFor="lastName">*Last Name: </label>
@@ -38,7 +39,8 @@ function TableBooking({formValue, setFormValue}) {
         value={formValue.lastName} 
         name="lastName"
         onChange={handleChange}
-        type="text" />
+        type="text" 
+        required/>
       </div>
       <div className="wrapper">
         <label htmlFor="email">*Email: </label>
@@ -47,7 +49,8 @@ function TableBooking({formValue, setFormValue}) {
         value={formValue.email} 
         name="email"
         onChange={handleChange}
-        type="email" />
+        type="email" 
+        required/>
       </div>
       <div style={{display: "flex", gap:"10px"}}>
         <label htmlFor="date">*Date: </label>
@@ -56,14 +59,17 @@ function TableBooking({formValue, setFormValue}) {
         value={formValue.date} 
         name="date"
         onChange={handleChange}
-        type="date"/>
+        type="date"
+        required/>
         <label htmlFor="time">*Time: </label>
-        <input 
-        id='time'
-        value={formValue.time} 
-        name="time"
-        onChange={handleChange}
-        type="time"/>
+        <select value={formValue.time}  id="time" name="time" onChange={handleChange} required>
+          <option value="17">17:00</option>
+          <option value="18">18:00</option>
+          <option value="19">19:00</option>
+          <option value="20">20:00</option>
+          <option value="21">21:00</option>
+          <option value="22">22:00</option>
+        </select>
       </div>
       <div className="wrapper">
         <label htmlFor="guests">*Number of guests: </label>
@@ -73,7 +79,9 @@ function TableBooking({formValue, setFormValue}) {
         name="guests"
         onChange={handleChange}
         min={1} max={30}
-        type="number" />
+        type="number" 
+        required
+        placeholder="1"/>
       </div>
       <div className="radioInput">
         <input
@@ -81,14 +89,16 @@ function TableBooking({formValue, setFormValue}) {
         checked={formValue.place} 
         name="place"
         onChange={handleChange}
-         type="radio" />
+        type="radio" 
+        required/>
         <label htmlFor="inside">I want to sit inside</label>
         <input 
         id='outside'
         checked={formValue.place} 
         name="place"
         onChange={handleChange}
-        type="radio" />
+        type="radio" 
+        required/>
         <label htmlFor="outside">I want to sit outside</label>
       </div>
       <div className="wrapper"> 

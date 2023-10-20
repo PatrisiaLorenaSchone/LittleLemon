@@ -7,7 +7,7 @@ function ThankYou() {
     <div className='thankYou'>
       <SecondaryTitle title={"Thank you for your booking!"}/>
       <p style={{textAlign:"left"}}>You will soon receive a confirmation email containing all your booking informations.<br/>
-      <small>If you want to cancel or modify your booking go to <Link to="/manage-booking">My Booking</Link> section</small>
+      <small>If you want to cancel or modify your booking go to <Link style={{color: "gold"}} to="/manage-booking"><b>My Booking</b></Link> section</small>
       </p>
       <Link to="/">
       <button>Back Home</button>

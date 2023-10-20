@@ -23,6 +23,7 @@ function App() {
       ocasion: ""
     }
     )
+    let [submitted, setSubmitted] = useState(false)
   return (
       <>
       <BrowserRouter>
@@ -30,8 +31,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage/>}/>
           <Route path="/menu" element={<Menu/>}/>
-          <Route path="/booking" element={<TableBooking formValue={formValue} setFormValue={setFormValue}/>}/>
-          <Route path="/manage-booking" element={<ManageBooking formValue={formValue} setFormValue={setFormValue}/>}/>
+          <Route path="/booking" element={<TableBooking formValue={formValue} setFormValue={setFormValue} submitted={submitted} setSubmitted={setSubmitted}/>}/>
+          <Route path="/manage-booking" element={<ManageBooking formValue={formValue} setFormValue={setFormValue} submitted={submitted}/>}/>
           <Route path="/login" element={<Login/>}/>
         </Routes>
       <Footer/>
