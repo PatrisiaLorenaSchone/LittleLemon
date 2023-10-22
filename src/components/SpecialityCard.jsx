@@ -11,6 +11,7 @@ const specialities = [
     and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons`,
     img: salad,
     id: 1,
+    price: "$ 12.50",
 },
 {
     title: "Spaghetti Carbonara",
@@ -19,6 +20,7 @@ const specialities = [
     with authentic guanciale and peccorino cheese, this dish is one to remember `,
     img: carbonara,
     id: 2,
+    price: "$ 14.99",
 },
 {
     title: "Lemon Dessert",
@@ -27,6 +29,7 @@ const specialities = [
     has been sourced and it is as authentic as can be imaged`,
     img: cake,
     id: 3,
+    price: "$ 3.60"
 },
 
 ]
@@ -35,8 +38,8 @@ const card = specialities.map(speciality => {
     return(
     <div key={speciality.id} className='animationContainer'>
     <div className="specialityCard">
-        <img height={220} src={speciality.img}/>
-        <h4 className='deliveryTag'> Order for delivery</h4>
+        <img height={208} src={speciality.img}/>
+        <h4 className='priceTag'>{speciality.price}</h4>
         <h3>{speciality.title}</h3>
         <p>{speciality.description}</p>
     </div>

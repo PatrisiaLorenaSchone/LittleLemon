@@ -50,12 +50,16 @@ button{
 button:hover{
   padding: 10px 25px;
 }
+button:disabled{
+  background-color: rgba(48, 48, 48, 0.777);
+  cursor: not-allowed;
+}
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
 nav{
-  background-color: rgba(0, 0, 0, 0.555);
+  background-color: rgba(0, 0, 0, 0.777);
   position: relative;
   padding: 10px 50px;
   display: flex;
@@ -100,10 +104,14 @@ header{
   padding: 100px 10%;
   width: 70%;
   margin: auto;
-  /* background-color: rgba(255, 255, 255, 0.777); */
+  background-color: rgba(255, 255, 255, 0.555);
+  /* background-image: url(./assets/itFood.jpg);
+  background-position:bottom;
+  background-size: cover;
+  background-blend-mode:hard-light; */
   margin-bottom: 100px;
   margin-top: 100px;
-  color: #c7c7c7;
+  color: #232323;
 }
 .headerText{
   max-width: 500px;
@@ -147,8 +155,8 @@ header{
   border: 5px solid rgba(4, 44, 0, 0.555);
   outline: 3px solid rgb(255, 255, 255);
   margin: auto;
-  background-color: rgba(223, 223, 223, 0.999);
-  width: 300px;
+  background-color: #dfdfdfff;
+  width: 280px;
   height: 505px;
   transition: 0.5s;
   color: #232323;
@@ -164,7 +172,7 @@ header{
   border-bottom: 2px solid rgba(0, 128, 0, 0.555);
   box-shadow: 0px 10px 20px rgba(128, 128, 128, 0.333);
 }
-.deliveryTag{
+.priceTag{
   position: absolute;
   padding: 6px 8px;
   top:130px;
@@ -322,20 +330,22 @@ iframe{
   width: 100%;
 }
 .manageBookingSection{
-
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-.manageBookingSection img{
-  padding: 100px 0px 50px 0px;
+  background-color: #00000081;
+  background-image: url(assets/restaurant4.jpg);
+  background-size: cover;
+  /* padding-top: 100px; */
 }
 .manageBookingSection ul{
-  background-color: rgba(255, 255, 255, 0.555);
-  color:#232323;
+  background-color: rgba(0, 0, 0, 0.555);
+  color:#ffffff;
 }
-.bookings{
-  margin-top: 20px;
-  background-color: white;
+.emptyBooking{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(35, 35, 35, 0.555);
+  padding: 8%;
 }
 form, .thankYou{
   background-color: rgba(0, 0, 0, 0.5);
@@ -344,27 +354,40 @@ form, .thankYou{
 }
 form, .formEdit, .thankYou{
   display: flex;
-  padding: 10%;
+  padding: 8% 10%;
   flex-direction: column;
   gap: 35px;
   align-items: flex-start;
 }
+.formEdit{
+  gap:10;
+  width: fit-content;
+  margin:0
+}
 .formEdit li{
   align-items: center;
+  height: 25px;
+  width: 300px;
+  margin: 0;
+  padding: 0;
 }
 .wrapper label{
   width: 155px;
   text-align: left;
 }
-form input, form select{
+input, select{
   height: 35px;
 }
-form input, form select, textarea{
+input, select, textarea{
   background-color: rgba(255, 255, 255, 0.8);
   color: black;
   border-radius: 3px;
   padding: 2px 12px;
   border: none;
+}
+.invalid{
+  border: 2px solid red;
+  margin-right: 10px;
 }
 form label{
   font-weight: 600;
@@ -377,19 +400,35 @@ gap: 5px;
 .deleteBtn{
   color:red;
   text-decoration: underline;
-  font-size: 1.5em;
+  font-size: 1.3em;
   cursor: pointer;
+  margin-top: 50px;
 }
 .menuSection{
-  display: flex;
   justify-content: space-evenly;
+  gap: 50px
 }
 .menuPage{
-  background-color: rgba(255, 255, 255, 0.555);
-  padding: 50px;
-  height: 500px;
+  padding: 10%;
+  background-color: rgba(29, 29, 29, 0.333);
 }
-
+.menuSection{
+  background-color: hsla(0, 0%, 11%, 0.555);
+}
+.menuCard{
+  padding: 35px;
+  background-color: rgb(255, 255, 255);
+  color: #232323;
+  width: 350px;
+}
+.menuItem{
+  display: flex;
+  gap: 10px;
+}
+.points{
+  border-bottom: 2px dotted gray;
+  flex-grow: 1;
+}
 @media screen and (max-width: 770px){
   .navBar{
     display: none;
@@ -404,8 +443,12 @@ gap: 5px;
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  form, .formEdit, .thankYou, header, footer{
-    padding: 10% 3%;
+  form, .thankYou, header, footer{
+    padding: 10% 6%;
+  }
+  .formEdit{
+    margin: auto;
+    padding: 10%;
   }
   .aboutImg{
     height: 350px;
