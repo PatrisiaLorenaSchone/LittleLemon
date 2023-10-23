@@ -481,11 +481,20 @@ gap: 5px;
 }
 .menuCard ul{
   background-color: rgb(255, 255, 255);
+  border-radius: 5px;
 }
 .menuItem{
   display: flex;
   gap: 10px;
 }
+/* .modal{
+  position: absolute;
+
+  height: fit-content;
+  width: fit-content;
+  padding: 50px;
+  background-color: #ffffff;
+} */
 .points{
   border-bottom: 2px dotted gray;
   flex-grow: 1;
@@ -524,12 +533,18 @@ gap: 5px;
     gap:50px;
   }
   .foodPng{
-    height: 130px;
-    top:-50px;
-    right:-15px;
+    height: 135px;
+    top:-60px;
+    right:-25px;
   }
   header img{
     height: 82px;
+  }
+  .menuCard{
+    padding: 15px;
+  }
+  .menuCard h1{
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 1300px){
