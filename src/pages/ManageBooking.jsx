@@ -30,10 +30,9 @@ function editData(){
 
   return (
     !formValue.firstName || empty ? 
-    <div className='emptyBooking'><SecondaryTitle title={"It looks like you have no reservation"}/> 
+    <div className='emptyBooking'><h2>"It looks like you have no reservation"</h2>
     <img src={emptyTable}/> 
-    <p>At Little Lemon we are always happy to see you and offer you the best culinary experience in town.</p>
-    <p>Make sure to visit us soon:</p>
+    <p>At Little Lemon we are always happy to see you and offer you the best culinary experience in town. Make sure to visit us soon:</p>
     <Link to="/booking">
         <button>Book a Table</button>
     </Link></div>:
@@ -73,7 +72,7 @@ function editData(){
         <button style={{height:"52px", margin: "0px"}} onClick={editData} > {edit ? `Save Changes` : `Edit Booking`}</button>
         <p onClick={deleteReservation} className='deleteBtn'>Delete Reservation</p>
       </ul>
-    : <Form buttonText={"Save Changes"} thankYouTitle={"Your booking informations have been successfully modified"}/>}
+    : <Form buttonText={"Save Changes"} thankYouTitle={"Your booking informations have been modified"}/>}
     </div>
   )
 }
