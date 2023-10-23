@@ -47,7 +47,6 @@ let testimonialCard = testimonials.map(testimonial => {
             <h3>{testimonial.name}</h3>
             <img height={18} src={stars} alt="" />
           </div>
-          <p>5.00</p>
         </div>
         <p>{testimonial.comment}</p>
     </div>

@@ -59,7 +59,7 @@ function Form({buttonText, thankYouTitle}) {
   return (
     submitted? <ThankYou title={thankYouTitle}/> :
     <form action="" onSubmit={handleSubmit}>
-    <SecondaryTitle title={"Booking informations"}/>
+    <SecondaryTitle title={"Booking details"}/>
     <div className="wrapper">
       <label htmlFor="firstName">*First Name: </label>
       <input 

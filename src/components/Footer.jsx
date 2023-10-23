@@ -10,7 +10,7 @@ function Footer() {
       <footer className='wrapper'>
       <div>
       <img height={250} src={logoSquare} alt="" />
-      <i style={{maxWidth:"777px"}}><svg clipRule="evenodd" width="100px" fill="#dfdfdfff" fillRule="evenodd" strokeLinejoin="round" strokeMiterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21.301 4c.411 0 .699.313.699.663 0 .248-.145.515-.497.702-1.788.948-3.858 4.226-3.858 6.248 3.016-.092 4.326 2.582 4.326 4.258 0 2.007-1.738 4.129-4.308 4.129-3.24 0-4.83-2.547-4.83-5.307 0-5.98 6.834-10.693 8.468-10.693zm-10.833 0c.41 0 .699.313.699.663 0 .248-.145.515-.497.702-1.788.948-3.858 4.226-3.858 6.248 3.016-.092 4.326 2.582 4.326 4.258 0 2.007-1.739 4.129-4.308 4.129-3.241 0-4.83-2.547-4.83-5.307 0-5.98 6.833-10.693 8.468-10.693z" fillRule="nonzero"/></svg>When life gives you lemons, add some passion and use them to make the best lemon cake in town. This way you will make the world a better place one plate at the time!</i>
+      <i style={{maxWidth:"777px"}}><svg clipRule="evenodd" width="100px" fill="#ffffff8e" fillRule="evenodd" strokeLinejoin="round" strokeMiterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21.301 4c.411 0 .699.313.699.663 0 .248-.145.515-.497.702-1.788.948-3.858 4.226-3.858 6.248 3.016-.092 4.326 2.582 4.326 4.258 0 2.007-1.738 4.129-4.308 4.129-3.24 0-4.83-2.547-4.83-5.307 0-5.98 6.834-10.693 8.468-10.693zm-10.833 0c.41 0 .699.313.699.663 0 .248-.145.515-.497.702-1.788.948-3.858 4.226-3.858 6.248 3.016-.092 4.326 2.582 4.326 4.258 0 2.007-1.739 4.129-4.308 4.129-3.241 0-4.83-2.547-4.83-5.307 0-5.98 6.833-10.693 8.468-10.693z" fillRule="nonzero"/></svg>When life gives you lemons, add some passion and use them to make the best lemon cake in town. This way you will make the world a better place one plate at the time!</i>
       </div>
       <div>
       <ul>
@@ -39,7 +39,7 @@ function Footer() {
       </div>
         {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52546.864798952134!2d-87.69096602624737!3d41.85261368692782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2ca3e2d94695%3A0x4829f3cc9ca2d0de!2sThe%20Art%20Institute%20of%20Chicago!5e0!3m2!1sen!2sde!4v1697469178848!5m2!1sen!2sde" width="600" height="250" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe> */}
       </footer>
-      <small style={{color:"gray"}}>copyrights</small>
+      <small style={{color:"gray"}}>copyrights -Patricia Lorena Schone- Design and Development.	&#169; All Rights reserved</small>
     </div>
   )
 }
