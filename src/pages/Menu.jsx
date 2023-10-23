@@ -40,25 +40,25 @@ const Data=[
       title: "Greek Salad",
       description: "(olives, feta, yogurt, salad mix)",
       price: "$ 15.60",
-      id: 1
+      id: 5
     },
     {
       title: "Salmon delight",
       description: "(avocado, salmon, cranberries, salad mix)",
       price: "$ 15.60",
-      id: 2,
+      id: 6,
     },
     {
       title: "Grilled veggies",
       description: "(grilled vegetables, salad mix)",
       price: "$ 15.60",
-      id: 3,
+      id: 7,
     },
     {
       title: "Chicken Salad",
       description: "(grilled chicken, onion, cucumber, salad mix)",
       price: "$ 15.60",
-      id: 4,
+      id: 8,
     }
   ],
   [
@@ -66,25 +66,25 @@ const Data=[
       title: "Tiramisu",
       description: "(mascarpone, caffee, cacao)",
       price: "$ 3.00",
-      id: 1
+      id: 9,
     },
     {
       title: "Lemon cake",
       description: "(lemon cream, cake)",
       price: "$ 2.50",
-      id: 2,
+      id: 10,
     },
     {
       title: "Turkish delight",
       description: "20 diffrent aromas",
       price: "$ 1.30",
-      id: 3,
+      id: 11,
     },
     {
       title: "Gelato",
       description: "23 diffrent aromas",
       price: "$ 2.90",
-      id: 4,
+      id: 12,
     }
   ]
 ]
