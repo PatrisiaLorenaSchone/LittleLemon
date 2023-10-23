@@ -12,25 +12,25 @@ const Data=[
   [
     {
       title: "Carbonara",
-      description: "(pecorino, guangiale, spaghetti)",
+      description: "(pecorino romano, guangiale, spaghetti)",
       price: "$ 15.60",
       id: 1
     },
     {
       title: "Amatriciana",
-      description: "lorem ipsum dolor",
+      description: "(onion, tomatoes, guanciale, fusilli)",
       price: "$ 15.60",
       id: 2,
     },
     {
       title: "Pasta al limone",
-      description: "lorem ipsum dolor",
+      description: "(lemon zest, panna, parmigiano, tagliolini)",
       price: "$ 15.60",
       id: 3,
     },
     {
       title: "Cacio e pepe",
-      description: "lorem ipsum dolor",
+      description: "(cacio cheese, black peper, butter, bucatini)",
       price: "$ 15.60",
       id: 4,
     }
@@ -38,25 +38,25 @@ const Data=[
   [
     {
       title: "Greek Salad",
-      description: "(chicken, feta, yogurt)",
+      description: "(olives, feta, yogurt, salad mix)",
       price: "$ 15.60",
       id: 1
     },
     {
       title: "Salmon delight",
-      description: "(avocado, salmon, cranberries)",
+      description: "(avocado, salmon, cranberries, salad mix)",
       price: "$ 15.60",
       id: 2,
     },
     {
       title: "Grilled veggies",
-      description: "lorem ipsum dolor",
+      description: "(grilled vegetables, salad mix)",
       price: "$ 15.60",
       id: 3,
     },
     {
-      title: "Cacio e pepe",
-      description: "lorem ipsum dolor",
+      title: "Chicken Salad",
+      description: "(grilled chicken, onion, cucumber, salad mix)",
       price: "$ 15.60",
       id: 4,
     }
@@ -64,26 +64,26 @@ const Data=[
   [
     {
       title: "Tiramisu",
-      description: "(chicken, feta, yogurt)",
-      price: "$ 15.60",
+      description: "(mascarpone, caffee, cacao)",
+      price: "$ 3.00",
       id: 1
     },
     {
       title: "Lemon cake",
-      description: "(avocado, salmon, cranberries)",
-      price: "$ 15.60",
+      description: "(lemon cream, cake)",
+      price: "$ 2.50",
       id: 2,
     },
     {
       title: "Turkish delight",
-      description: "lorem ipsum dolor",
-      price: "$ 15.60",
+      description: "20 diffrent aromas",
+      price: "$ 1.30",
       id: 3,
     },
     {
       title: "Gelato",
-      description: "lorem ipsum dolor",
-      price: "$ 15.60",
+      description: "23 diffrent aromas",
+      price: "$ 2.90",
       id: 4,
     }
   ]
@@ -132,7 +132,7 @@ function Menu() {
         <img height={190} className='foodPng' src={saladP} alt="" />
         {salads}
         </MenuCard>
-        <MenuCard menuCardTitle={"Desserts"}>
+        <MenuCard menuCardTitle={"Dessert"}>
         <img height={200} className='foodPng foodPnd' src={sweetP} alt="" />
           {desserts}
         </MenuCard>
@@ -144,14 +144,18 @@ function Menu() {
            <ul>
             <h2>Red wine</h2>
               <li>Valpolicela<div className='points'/>$ 10.00</li>
-              <li>Soave<div className='points'/>$ 10.00</li>
+              <li>Ermeto Alto<div className='points'/>$ 10.00</li>
               <li>Bardolino<div className='points'/>$ 10.00</li>
            </ul>
            <ul>
             <h2>White wine</h2>
-              <li>Valpolicela<div className='points'/>$ 10.00</li>
+              <li>Lugana<div className='points'/>$ 10.00</li>
               <li>Soave<div className='points'/>$ 10.00</li>
               <li>Custoza<div className='points'/>$ 10.00</li>
+           </ul>
+           <ul>
+            <h2>Prosecco</h2>
+              <li>Ruggeri<div className='points'/>$ 11.00</li>
            </ul>
 
         </MenuCard>
@@ -159,18 +163,20 @@ function Menu() {
         <img height={200} className='foodPng foodPnd' src={juiceP} alt="" />
         <ul>
             <h2>Without Alcohol</h2>
-              <li>Valpolicela<div className='points'/>$ 10.00</li>
-              <li>Soave<div className='points'/>$ 10.00</li>
-              <li>Custoza<div className='points'/>$ 10.00</li>
+              <li>Berry Smash<div className='points'/>$ 10.00</li>
+              <li>Tonic Rickey<div className='points'/>$ 10.00</li>
+              <li>Shirley<div className='points'/>$ 10.00</li>
           </ul>
           <ul>
             <h2>With Alcohol</h2>
-              <li>Valpolicela<div className='points'/>$ 10.00</li>
-              <li>Soave<div className='points'/>$ 10.00</li>
-              <li>Custoza<div className='points'/>$ 10.00</li>
+              <li>Mojito<div className='points'/>$ 10.00</li>
+              <li>Pina Colada<div className='points'/>$ 10.00</li>
+              <li>Cuba Libre<div className='points'/>$ 10.00</li>
+              <li>Mimosa<div className='points'/>$ 10.00</li>
+              <li>Negroni<div className='points'/>$ 10.00</li>
           </ul>
         </MenuCard>
-        <MenuCard menuCardTitle={"Extras"}>
+        <MenuCard menuCardTitle={"Extra"}>
         <img height={210} className='foodPng' src={coffeP} alt="" />
           <ul>
             <li>Hot Tea<div className='points'></div>$ 5.00</li>

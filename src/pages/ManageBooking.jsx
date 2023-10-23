@@ -30,12 +30,12 @@ function editData(){
 
   return (
     !formValue.firstName || empty ? 
-    <div className='emptyBooking'><h2>"It looks like you have no reservation"</h2>
+    <div className='emptyBooking'><h1>It looks like you have no reservation</h1>
     <img src={emptyTable}/> 
     <p>At Little Lemon we are always happy to see you and offer you the best culinary experience in town. Make sure to visit us soon:</p>
     <Link to="/booking">
         <button>Book a Table</button>
-    </Link></div>:
+    </Link></div> :
       <div className='manageBookingSection'>
       {!edit ? 
       <ul className='formEdit'>
