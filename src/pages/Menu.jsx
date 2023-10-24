@@ -76,13 +76,13 @@ const Data=[
     },
     {
       title: "Turkish delight",
-      description: "20 diffrent aromas",
+      description: "20 different aromas",
       price: "$ 1.30",
       id: 11,
     },
     {
       title: "Gelato",
-      description: "23 diffrent aromas",
+      description: "23 different aromas",
       price: "$ 2.90",
       id: 12,
     }
@@ -121,7 +121,7 @@ function Menu() {
   return (
     <div className='menuPage'>
       <h1>Our Menu</h1>
-      <p>We like to keep ourselves creative while surprising you with something fresh and diffrent every time. That's why we change our menu every season. </p>
+      <p>We like to keep ourselves creative while surprising you with something fresh and different every time. That's why we change our menu every season. </p>
       <SecondaryTitle title={"Food"}/>
       <div className="menuSection wrapper">
         <MenuCard menuCardTitle={"Pasta"}>
