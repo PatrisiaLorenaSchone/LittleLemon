@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect} from "react"
 // import error from "../assets/error.svg"
-import SecondaryTitle from './secondaryTitle'
+import SecondaryTitle from './SecondaryTitle'
 import ThankYou from './ThankYou';
 
 function Form({buttonText, thankYouTitle}) {
