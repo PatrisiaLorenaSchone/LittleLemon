@@ -1,5 +1,5 @@
 import React from 'react'
-import SecondaryTitle from './secondaryTitle'
+import SecondaryTitle from './SecondaryTitle'
 import chefs from "../assets/chefs2.png"
 import hat1 from "../assets/hat1.png"
 import fork from "../assets/fork.png"
