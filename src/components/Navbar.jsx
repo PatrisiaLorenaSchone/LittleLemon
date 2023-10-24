@@ -18,13 +18,13 @@ function Navbar() {
         </div>
         {!hamburgerMenu && <div className='mobileNav'>
           <Link to="/">Home</Link>
-          <Link to="#about">About</Link>
+          <a href="#about">About</a>
           <Link to="/menu">Menu</Link>
           <Link to="/manage-booking">Manage booking</Link>
         </div>}
         <div className='navBar'>
           <Link to="/">Home</Link>
-          <Link to="#about">About</Link>
+          <a href="#about">About</a>
           <Link to="/menu">Menu</Link>
           <Link to="/manage-booking">Manage booking</Link>
         </div>
