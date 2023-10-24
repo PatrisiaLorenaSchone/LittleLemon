@@ -1,5 +1,5 @@
 import React from 'react'
-import SecondaryTitle from './secondaryTitle'
+import SecondaryTitle from './SecondaryTitle'
 import SpecialityCard from './SpecialityCard'
 import { Link } from 'react-router-dom'
 
