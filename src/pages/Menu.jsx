@@ -184,7 +184,7 @@ function Menu() {
             <li>Water<div className='points'></div>$ 1.00</li>
             <li>Sparkling Water<div className='points'></div>$ 1.00</li>
             <li>Espresso<div className='points'></div>$ 1.50</li>
-            <li>Capucino<div className='points'></div>$ 2.00</li>
+            <li>Cappuccino<div className='points'></div>$ 2.00</li>
             <li>Fruit Juice<div className='points'></div>$ 3.00</li>
             <li>Soda<div className='points'></div>$ 5.00</li>
           </ul>
