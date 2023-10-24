@@ -10,8 +10,7 @@ const specialities = [
     description: `The famous greek salad of crispy lettuce, peppers, olives, 
     and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons`,
     img: salad,
-    id: 1,
-    price: "$ 12.50",
+    id: 21,
 },
 {
     title: "Spaghetti Carbonara",
@@ -19,8 +18,7 @@ const specialities = [
     description: `Our carbonara will make you experience the italian flavours at a diffrent level, made 
     with authentic guanciale and peccorino cheese, this dish is one to remember `,
     img: carbonara,
-    id: 2,
-    price: "$ 14.99",
+    id: 22,
 },
 {
     title: "Lemon Dessert",
@@ -28,8 +26,7 @@ const specialities = [
     description: `This comes straight from grandma's recipe book, every last ingredient 
     has been sourced and it is as authentic as can be imaged`,
     img: cake,
-    id: 3,
-    price: "$ 3.60"
+    id: 23,
 },
 
 ]
@@ -39,7 +36,7 @@ const card = specialities.map(speciality => {
     <div key={speciality.id} className='animationContainer'>
     <div className="specialityCard">
         <img height={208} src={speciality.img}/>
-        <h4 className='priceTag'>{speciality.price}</h4>
+        <h4 className='priceTag'>New</h4>
         <h3>{speciality.title}</h3>
         <p>{speciality.description}</p>
     </div>
