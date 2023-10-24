@@ -1,5 +1,5 @@
 import React from 'react'
-import SecondaryTitle from '../components/secondaryTitle'
+import SecondaryTitle from '../components/SecondaryTitle'
 import MenuCard from '../components/MenuCard'
 import pastaP from "../assets/pastaD.png"
 import saladP from "../assets/saladD.png"
