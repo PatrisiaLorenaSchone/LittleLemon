@@ -4,7 +4,7 @@ import p2 from "../assets/p2.png";
 import p3 from "../assets/p3.png"
 import p4 from "../assets/p4.png"
 import stars from "../assets/stars.png"
-import SecondaryTitle from './secondaryTitle';
+import SecondaryTitle from './SecondaryTitle';
 import arrowRight from "../assets/arrowRight.svg";
 import arrowLeft from "../assets/arrowLeft.svg"
 
