@@ -1,5 +1,5 @@
 import React from 'react'
-import SecondaryTitle from "../components/secondaryTitle"
+import SecondaryTitle from "../components/SecondaryTitle"
 import { Link } from 'react-router-dom'
 
 function ThankYou({title}) {
