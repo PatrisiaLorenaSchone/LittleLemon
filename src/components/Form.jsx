@@ -104,11 +104,13 @@ function Form({buttonText, thankYouTitle}) {
       name="date"
       onChange={handleChange}
       type="date"
+      placeholder='&#128198;'
       required
       //className={isTouched.date ? 'invalid' : undefined}
       />
       <label htmlFor="time">*Time: </label>
       <select value={formValue.time}  id="time" name="time" onChange={handleChange} required>
+        <option value="">*Time</option>
         <option value="17">17:00</option>
         <option value="18">18:00</option>
         <option value="19">19:00</option>
@@ -127,7 +129,7 @@ function Form({buttonText, thankYouTitle}) {
       min={1} max={30}
       type="number" 
       required
-      placeholder="1-30"
+      placeholder=" &#128100; 1-30"
       //className={isTouched.guests ? 'invalid' : undefined}
       />
     </div>

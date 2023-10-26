@@ -1,11 +1,10 @@
 #root {
   /* max-width: 1680px; */
-  margin: 0;
-  text-align: center;
-  background-color:rgb(4, 23, 0);
   background-image: url(./assets/lemonTree.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0;
+  text-align: center;
 }

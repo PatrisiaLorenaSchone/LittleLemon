@@ -35,7 +35,7 @@ const card = specialities.map(speciality => {
     return(
     <div key={speciality.id} className='animationContainer'>
     <div className="specialityCard">
-        <img height={208} src={speciality.img}/>
+        <img height={207} src={speciality.img}/>
         <h4 className='priceTag'>New</h4>
         <h3>{speciality.title}</h3>
         <p>{speciality.description}</p>

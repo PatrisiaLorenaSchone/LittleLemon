@@ -68,7 +68,7 @@ function Testimonials() {
   return (
     <div className='testimonialSection'>
       <div style={{textAlign: "left", padding: "60px"}}>
-      <SecondaryTitle title={"Here are some Reviews"}/>
+      <SecondaryTitle title={"Reviews"}/>
       <p>It is always a pleasure to hear back from you. <br/>Your opinion keeps us inspired and your apreciation makes all our efforts worth it</p>
       </div>
       <div className='carousel'>

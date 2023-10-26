@@ -9,7 +9,7 @@ function Navbar() {
   
   const [hamburgerMenu, setHamburgerMenu] = useState(true)
   return (
-    <div>
+    <div  id="nav">
       <nav>
         <Link to="/"><img src={logoLine} alt="" height={80}/></Link>
         <div className="hamburgerMenu">
