@@ -20,11 +20,6 @@ function About() {
           To craft the menu, Mario relies on family recipes and his experience as a chef in Italy.
           Adrian does all the marketing for the restaurant and led the effort to expand the menu beyond classic Italian to incorporate additional cuisines from the Mediterranean region.
         </p>
-        <div className='iconContainer'>
-          <img src={hat1} alt="" />
-          <img src={fork} alt="" />
-          <img src={hat2} alt="" />
-        </div>
       </div>
       <img className='aboutImg' src={chefs} alt="the chefs"/>
     </div>

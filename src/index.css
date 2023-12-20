@@ -31,7 +31,7 @@ nav a {
   /* border-bottom: 2px solid rgba(255, 255, 255, 0.089); */
   transition: 0.5s;
 }
-.navBar a:hover {
+.navBar a:hover, .activeLink {
   color: rgb(206, 206, 181);
   border-bottom: 2px solid rgb(206, 206, 181);
 }

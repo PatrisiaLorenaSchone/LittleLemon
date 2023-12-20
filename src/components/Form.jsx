@@ -2,9 +2,9 @@ import React from 'react'
 import { useState, useEffect} from "react"
 // import error from "../assets/error.svg"
 import SecondaryTitle from './SecondaryTitle'
-import ThankYou from './ThankYou';
+import { Link } from 'react-router-dom';
 
-function Form({buttonText, thankYouTitle}) {
+function Form({buttonText="Book Table"}) {
 
     const [submitted, setSubmitted] = useState(()=> {return false});
     function handleSubmit(e){
@@ -57,7 +57,6 @@ function Form({buttonText, thankYouTitle}) {
       // })
     
   return (
-    submitted? <ThankYou title={thankYouTitle}/> :
     <form action="" onSubmit={handleSubmit}>
     <SecondaryTitle title={"Booking details"}/>
     <div className="wrapper">
@@ -169,7 +168,7 @@ function Form({buttonText, thankYouTitle}) {
       onChange={handleChange}
       cols="54" rows="10"></textarea>
     </div>
-    <button disabled={formValue.firstName.length < 2 || formValue.lastName.length < 2 || formValue.email.length < 2 || formValue.guests == "" || formValue.date == ""}>{buttonText}</button>
+    <Link to="/booking/thankyou"><button disabled={formValue.firstName.length < 2 || formValue.lastName.length < 2 || formValue.email.length < 2 || formValue.guests == "" || formValue.date == ""}>{buttonText}</button></Link>
   </form>
   )
 }

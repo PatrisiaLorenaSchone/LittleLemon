@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import logoLine from "../assets/logoLine.png"
 import menu from "../assets/menu.svg"
 import close from "../assets/close.svg"
@@ -11,22 +11,22 @@ function Navbar() {
   return (
     <div  id="nav">
       <nav>
-        <Link to="/"><img src={logoLine} alt="" height={80}/></Link>
+        <NavLink to="/"><img src={logoLine} alt="" height={80}/></NavLink>
         <div className="hamburgerMenu">
           { hamburgerMenu && <img aria-label="open menu" src={menu} alt="" onClick={() => setHamburgerMenu(!hamburgerMenu)} />}
           { !hamburgerMenu && <img aria-label="close menu" src={close} alt="" onClick={() => setHamburgerMenu(!hamburgerMenu)}/>}
         </div>
         {!hamburgerMenu && <div className='mobileNav'>
-          <Link to="/">Home</Link>
-          <a href="#about">About</a>
-          <Link to="/menu">Menu</Link>
-          <Link to="/manage-booking">Manage booking</Link>
+          <NavLink to="/">Home</NavLink>
+          <a href="/#about">About</a>
+          <NavLink to="/menu">Menu</NavLink>
+          <NavLink to="/manage-booking">Manage booking</NavLink>
         </div>}
         <div className='navBar'>
-          <Link to="/">Home</Link>
-          <a href="#about">About</a>
-          <Link to="/menu">Menu</Link>
-          <Link to="/manage-booking">Manage booking</Link>
+          <NavLink className={({isActive}) => isActive ? "activeLink" : null} to="/">Home</NavLink>
+          <a href="/#about">About</a>
+          <NavLink className={({isActive}) => isActive ? "activeLink" : null} to="/menu">Menu</NavLink>
+          <NavLink className={({isActive}) => isActive ? "activeLink" : null} to="/manage-booking">Manage booking</NavLink>
         </div>
       </nav>
     </div>
