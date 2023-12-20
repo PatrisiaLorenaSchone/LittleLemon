@@ -566,6 +566,10 @@ gap: 5px;
   .menuCard h1{
     font-size: 2rem;
   }
+  .upButton{
+    bottom: 10px;
+    right: 10px;
+  }
 }
 @media screen and (max-width: 1300px){
   header{
